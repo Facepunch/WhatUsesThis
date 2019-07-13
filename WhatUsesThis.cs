@@ -122,7 +122,7 @@ namespace UnityEngine
 				}
 			}
 
-			Debug.Log( $"<color=#5C93B9>Search complete, found <b>{iCount}</b> result{(iCount>1?"s":"")}</color>");
+			Debug.Log( $"<color=#5C93B9>Search complete, found <b>{iCount}</b> result{( iCount == 1 ? "" : "s" )}</color>");
 		}
 
 		[MenuItem( "Assets/What does this use?" )]
@@ -144,7 +144,7 @@ namespace UnityEngine
 				
 			}
 
-			Debug.Log( $"<color=#5C93B9>Search complete, found <b>{iCount}</b> result{( iCount > 1 ? "s" : "" )}</color>" );
+			Debug.Log( $"<color=#5C93B9>Search complete, found <b>{iCount}</b> result{( iCount == 1 ? "" : "s" )}</color>" );
 		}
 	}
 }
