@@ -1,13 +1,12 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
 using UnityEditor;
-using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace UnityEngine
 {
-	public static class WhatUsesThis
+    public static class WhatUsesThis
 	{
 		const string CacheFilename = "Temp/WhatUsesThis.bin";
 
@@ -148,3 +147,4 @@ namespace UnityEngine
 		}
 	}
 }
+#endif
